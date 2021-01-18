@@ -10,6 +10,9 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Anton', sans-serif;
+}
 /* nav e funzioni*/
 nav {
   position: fixed;
@@ -21,20 +24,21 @@ nav {
 
 nav li {
   display: inline-block;
+  width: 50px;
   border: 1px solid black;
-  border-radius: 12px;
-  background-color: white;
-  font-size: 30px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.8);
+  font-size: 22px;
   padding: 10px;
 }
 
-li a {
-  color: black;
+li {
   text-decoration: none;
 }
 
 li:hover {
-  box-shadow: 0 4px 2px grey;
+  box-shadow: 0 4px 10px grey;
+  background-color: rgba(255,255,255,0.2);
 }
 
 /* classi */
@@ -48,7 +52,7 @@ li:hover {
 #scarpe-1 {
   position: relative;
   display: block;
-  background-color: #74673f;
+  background-color: #89654a;
   width: 100%;
   height: 100%;
 }
@@ -56,7 +60,7 @@ li:hover {
 #scarpe-2 {
   position: relative;
   display: block;
-  background-color: #45c3c5;
+  background-color: #42c852;
   width: 100%;
   height: 100%;
 }
@@ -64,14 +68,42 @@ li:hover {
 #scarpe-3 {
   position: relative;
   display: block;
-  background-color: #83442b;
+  background-color: #a45d3f;
   width: 100%;
   height: 100%;
 }
 
- img {
+img.img-blur,img.img-clear {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -50%);
+  width: 50vw;
+
  }
+
+img.img-blur {
+ filter: blur(100px);
+ opacity: 0.8;
+}
+
+section h2 {
+ position: absolute;
+ top: 75%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ font-size: 60px;
+ text-shadow: 2px 2px 2px black;
+ letter-spacing: 3px;
+ text-transform: uppercase;
+}
+
+h2.text-1 {
+  color: #4a5989;
+}
+h2.text-2 {
+  color: #c84642;
+}
+h2.text-3 {
+  color: #3f90a4;
+}
